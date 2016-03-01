@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../Magento/Backend/etc/menu.xsd">
+    <menu>
+        <!-- following row for create a new menu tab magento admin panel -->
+        <add id="Webkul_Grid::view" title="Webkul" module="Webkul_Grid" sortOrder="60" resource="Webkul_Grid::view"/>
+        <!-- following row for add a menu option in new created menu tab -->
+        <add id="Webkul_Grid::grid" title="Webkul Grid View" module="Webkul_Grid" sortOrder="10" parent="Webkul_Grid::view" action="grid/grid" resource="Webkul_Grid::view"/>
+        <!--add id="Webkul_Grid::grid" title="Webkul Grid View" module="Webkul_Grid" sortOrder="10" parent="Webkul_Grid::view" action="grid/grid" resource="Webkul_Grid::view"/-->
+    </menu>
+</config>
