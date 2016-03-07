@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © 2015 Pagseguro. All rights reserved.
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../Backend/etc/menu.xsd">
+    <menu>
+        <add id="document::base" title="Mage" module="Mage_Document" sortOrder="100" resource="Mage_Document::document"/>
+        <add id="mage_document::magento2" title="Post" module="Mage_Document" sortOrder="10" parent="document::base" action="mage_document/post/" resource="Mage_Document::post"/>
+    </menu>
+</config>

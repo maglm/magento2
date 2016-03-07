@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © 2015 Pagseguro. All rights reserved.
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../Backend/etc/menu.xsd">
+    <menu>
+        <add id="sample::base" title="Sample" module="Sample_Trial" sortOrder="90" resource="Sample_Trial::sample"/>
+        <add id="sample_trial::magento2" title="Items" module="Sample_Trial" sortOrder="10" parent="sample::base" action="sample_trial/items/" resource="Sample_Trial::items"/>
+    </menu>
+</config>

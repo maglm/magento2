@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" layout="3columns"
+    xsi:noNamespaceSchemaLocation="../../../../../../../lib/internal/Magento/Framework/View/Layout/
+    etc/page_configuration.xsd">
+    <body>
+        <referenceContainer name="content">
+            <block class="Step\Practice\Block\Pedit" name="step_practice_block_edit"
+    template="Step_Practice::addedit.phtml" />
+        </referenceContainer>
+    </body>
+</page>

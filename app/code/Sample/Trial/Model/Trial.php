@@ -11,6 +11,6 @@ class Trial extends AbstractModel
      */
     protected function _construct()
     {
-        $this->_init('Sample\Trial\Model\Resource\Trial);
+        $this->_init('Sample\Trial\Model\ResourceModel\Trial');
     }
 }

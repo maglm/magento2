@@ -2,6 +2,7 @@
 return array (
   'modules' => 
   array (
+    'Mage_Document' => 1,
     'Magento_Store' => 1,
     'Magento_AdvancedPricingImportExport' => 1,
     'Magento_Directory' => 1,
@@ -100,8 +101,10 @@ return array (
     'Magento_Weee' => 1,
     'Magento_CatalogWidget' => 1,
     'Magento_Wishlist' => 1,
+    'Pagseguro_Magento2' => 1,
     'Sample_News' => 1,
     'Sample_Trial' => 1,
+    'Step_Practice' => 1,
     'Tutorial_Example' => 1,
     'Tutorial_SimpleNews' => 1,
     'Ves_HelloWorld' => 1,

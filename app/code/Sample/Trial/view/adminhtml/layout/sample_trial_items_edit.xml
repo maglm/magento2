@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © 2015 Pagseguro. All rights reserved.
+ */
+-->
+
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" layout="admin-2columns-left" xsi:noNamespaceSchemaLocation="../../../../../../../lib/internal/Magento/Framework/View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceContainer name="left">
+            <block class="Sample\Trial\Block\Adminhtml\Items\Edit\Tabs" name="sample_trial_items_edit_tabs">
+                <block class="Sample\Trial\Block\Adminhtml\Items\Edit\Tab\Main" name="sample_trial_items_edit_tab_main"/>
+                <action method="addTab">
+                    <argument name="name" xsi:type="string">main_section</argument>
+                    <argument name="block" xsi:type="string">sample_trial_items_edit_tab_main</argument>
+                </action>
+            </block>
+        </referenceContainer>
+        <referenceContainer name="content">
+            <block class="Sample\Trial\Block\Adminhtml\Items\Edit" name="trial_items_edit"/>
+        </referenceContainer>
+    </body>
+</page>

@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © 2015 Pagseguro. All rights reserved.
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../Backend/etc/menu.xsd">
+    <menu>
+        <add id="pagseguro::base" title="Pagseguro" module="Pagseguro_Magento2" sortOrder="90" resource="Pagseguro_Magento2::sample"/>
+        <add id="pagseguro_magento2::magento2" title="Items" module="Pagseguro_Magento2" sortOrder="10" parent="pagseguro::base" action="pagseguro_magento2/items/" resource="Pagseguro_Magento2::items"/>
+    </menu>
+</config>

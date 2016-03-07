@@ -1,0 +1,45 @@
+<?php  $_gridrecords = $block->getCollection(); // get collection which we set in block class 
+$author = $_gridrecords->getData();
+$name = isset($author['0']['name'])?$author['0']['name']:'';
+$email = isset($author['0']['email'])?$author['0']['email']:'';
+$phone = isset($author['0']['phone'])?$author['0']['phone']:'';
+$address = isset($author['0']['address'])?$author['0']['address']:'';
+$city = isset($author['0']['city'])?$author['0']['city']:'';
+
+$author_id = isset($author['0']['id'])?$author['0']['id']:'';
+
+?>
+ <div class="table-wrapper orders-history">
+ <FORM METHOD="POST" ACTION="<?php echo $this->getUrl('practice/index/edit');?>">
+<table class="data table table-order-items history" id="my-orders-table">
+	<tr>
+		<td scope="col" class="col title"><?php echo __('Name') ?></td>
+		<td><input type="text" name="name" value="<?php echo $name; ?>" ></td>
+	</tr>
+	<tr>
+		<td scope="col" class="col title"><?php echo __('Email') ?></td>
+		<td><input type="text" name="email" value="<?php echo $email; ?>" ></td>
+	</tr>
+	<tr>
+		<td scope="col" class="col title"><?php echo __('Phone') ?></td>
+		<td><input type="text" name="phone" value="<?php echo $phone; ?>" ></td>
+	</tr>
+	<tr>
+		<td scope="col" class="col title"><?php echo __('Address') ?></td>
+		<td><input type="text" name="address" value="<?php echo $address; ?>" ></td>
+	</tr>
+	<tr>
+		<td scope="col" class="col title"><?php echo __('City') ?></td>
+		<td><input type="text" name="city" value="<?php echo $city; ?>" ></td>
+	</tr>
+
+	<tr>
+		<td scope="col" class="col title" colspan="2">
+			<input type="hidden" name="author_id" value="<?php echo $author_id; ?>" >
+			<center><input type="submit" value="Submit" class="action submit primary"></center>
+		</td>
+		
+	</tr>	
+</table>
+</FORM>
+</div>

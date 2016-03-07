@@ -1,0 +1,45 @@
+<?php  $_gridrecords = $block->getCollection(); // get collection which we set in block class 
+$document = $_gridrecords->getData();
+$name = isset($document['0']['name'])?$document['0']['name']:'';
+$email = isset($document['0']['email'])?$document['0']['email']:'';
+$phone = isset($document['0']['phone'])?$document['0']['phone']:'';
+$address = isset($document['0']['address'])?$document['0']['address']:'';
+$city = isset($document['0']['city'])?$document['0']['city']:'';
+
+$document_id = isset($document['0']['id'])?$document['0']['id']:'';
+
+?>
+ <div class="table-wrapper orders-history">
+ <FORM METHOD="POST" ACTION="<?php echo $this->getUrl('document/index/edit');?>">
+<table class="data table table-order-items history" id="my-orders-table">
+	<tr>
+		<td scope="col" class="col title"><?php echo __('Name') ?></td>
+		<td><input type="text" name="name" value="<?php echo $name; ?>" ></td>
+	</tr>
+	<tr>
+		<td scope="col" class="col title"><?php echo __('Email') ?></td>
+		<td><input type="text" name="email" value="<?php echo $email; ?>" ></td>
+	</tr>
+	<tr>
+		<td scope="col" class="col title"><?php echo __('Phone') ?></td>
+		<td><input type="text" name="phone" value="<?php echo $phone; ?>" ></td>
+	</tr>
+	<tr>
+		<td scope="col" class="col title"><?php echo __('Address') ?></td>
+		<td><input type="text" name="address" value="<?php echo $address; ?>" ></td>
+	</tr>
+	<tr>
+		<td scope="col" class="col title"><?php echo __('City') ?></td>
+		<td><input type="text" name="city" value="<?php echo $city; ?>" ></td>
+	</tr>
+
+	<tr>
+		<td scope="col" class="col title" colspan="2">
+			<input type="hidden" name="document_id" value="<?php echo $document_id; ?>" >
+			<center><input type="submit" value="Submit" class="action submit primary"></center>
+		</td>
+		
+	</tr>	
+</table>
+</FORM>
+</div>
